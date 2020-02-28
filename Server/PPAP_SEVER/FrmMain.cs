@@ -18,6 +18,7 @@ namespace PPAP_SEVER
         public FrmMain()
         {
             InitializeComponent();
+            Initialize();
         }
 
         #region Public Properties
@@ -27,19 +28,35 @@ namespace PPAP_SEVER
 
 
         #region Public Methods
-        public void InitlizeData()
-        {
-            
-        }
+
 
         #endregion
 
 
         #region Private Methods
 
-        private void InitInstance()
+        /// <summary>
+        /// 초기값 설정
+        /// </summary>
+        private void Initialize()
         {
+            if (CConnectManager.DBConnector == null || CConnectManager.JsonConnector == null)
+                return;
 
+            InitDBconnectInfor();
+            //do it..
+            //json 추가 필요 
+
+        }
+        /// <summary>
+        /// DB 연결에 필요한 정보 설정 하는 함수
+        /// </summary>
+        private void InitDBconnectInfor()
+        {
+            CConnectManager.DBConnector.Server = "localhost";
+            CConnectManager.DBConnector.Database= "dbtest";
+            CConnectManager.DBConnector.UserID ="JK";
+            CConnectManager.DBConnector.Password = "ppap";
         }
 
         #endregion

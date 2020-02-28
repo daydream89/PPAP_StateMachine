@@ -43,6 +43,9 @@
     <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPdfViewer.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="JsonExSerializer">
+      <HintPath>External\JsonExSerializer.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\External\MySql.Data.dll</HintPath>
@@ -69,7 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\CTemplate.cs" />
+    <Compile Include="Common\CConnectManager.cs" />
     <Compile Include="Common\Database\CDatabaseConnector.cs" />
+    <Compile Include="Common\Json\CJsonConnector.cs" />
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +110,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\Json\" />
-    <Folder Include="Helper\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
