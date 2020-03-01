@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+Client/StateMachine/cocos2d
+Client/StateMachine/proj.win32/Debug.win32
+Client/StateMachine/proj.win32/.vs
