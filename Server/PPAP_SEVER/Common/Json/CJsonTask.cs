@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PPAP_SEVER
 {
-    public class CJsonConnector : IDisposable
+    public class CJsonTask : IDisposable
     {
 
         #region Member Variables
@@ -21,7 +21,7 @@ namespace PPAP_SEVER
 
         #region Initialize/Dispose
 
-        public CJsonConnector()
+        public CJsonTask()
         {
             InitInstance();
         }

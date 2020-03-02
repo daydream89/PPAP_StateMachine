@@ -44,6 +44,12 @@ namespace PPAP_SEVER
                 return;
 
             InitDBconnectInfor();
+
+
+            DataSet Insert = CConnectManager.DBConnector.ExcuteMySqlQuery("INSERT INTO test(`temp1`, `temp2`) VALUES('양윤일', '바아아앙부');");
+            grdDB.DataSource = CConnectManager.DBConnector.ExcuteMySqlQuery("SELECT * FROM ppap.test;").Tables[0];
+            grvDB.UpdateCurrentRow();
+            
             //do it..
             //json 추가 필요 
 
@@ -53,10 +59,10 @@ namespace PPAP_SEVER
         /// </summary>
         private void InitDBconnectInfor()
         {
-            CConnectManager.DBConnector.Server = "localhost";
-            CConnectManager.DBConnector.Database= "dbtest";
-            CConnectManager.DBConnector.UserID ="JK";
-            CConnectManager.DBConnector.Password = "ppap";
+            CConnectManager.DBConnector.Server = "52.79.47.71";
+            CConnectManager.DBConnector.Database= "ppap";
+            CConnectManager.DBConnector.UserID ="ppap";
+            CConnectManager.DBConnector.Password = "sLK#e^";
         }
 
         #endregion

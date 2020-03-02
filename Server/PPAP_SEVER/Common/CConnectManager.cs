@@ -10,8 +10,8 @@ namespace PPAP_SEVER
     {
         #region Member Variables
 
-        public static CDatabaseConnector DBConnector = new CDatabaseConnector();
-        public static CJsonConnector JsonConnector = new CJsonConnector();
+        public static CDatabaseTask DBConnector = new CDatabaseTask();
+        public static CJsonTask JsonConnector = new CJsonTask();
 
         #endregion
 
