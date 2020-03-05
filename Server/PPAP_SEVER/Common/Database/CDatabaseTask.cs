@@ -108,6 +108,9 @@ namespace PPAP_SEVER
             return bOk;
         }
 
+        /// <summary>
+        /// MySqlQuery명령어 입력 및 데이터를 DataSet 파일로 전환
+        /// </summary>
         public DataSet ExcuteMySqlQuery(string sCommand)
         {
             DataSet dt = new DataSet();
@@ -117,10 +120,7 @@ namespace PPAP_SEVER
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 adapter.SelectCommand = new MySqlCommand(sUserQuery, m_cMySql);
                 adapter.Fill(dt);
-
-
                 ReleaseConnect();
-
             }
             return dt;
         }

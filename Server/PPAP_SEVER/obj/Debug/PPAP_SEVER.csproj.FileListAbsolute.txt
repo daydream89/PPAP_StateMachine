@@ -182,3 +182,5 @@ D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\de\DevExpress.Of
 D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
 D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
 D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Newtonsoft.Json.dll
+D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Newtonsoft.Json.xml

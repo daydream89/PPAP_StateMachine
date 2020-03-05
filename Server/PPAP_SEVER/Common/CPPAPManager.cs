@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PPAP_SEVER
 {
-    public static class CConnectManager
+    public static class CPPAPManager
     {
         #region Member Variables
 
@@ -16,7 +17,10 @@ namespace PPAP_SEVER
         #endregion
 
         #region Public Properties
-
+        public static DialogResult ShowPopup(IWin32Window owner, string sMessage, MessageBoxButtons emButtons, MessageBoxIcon emIcon)
+        {
+            return MessageBox.Show(sMessage, "PPAP", emButtons, emIcon);
+        }
 
         #endregion
 

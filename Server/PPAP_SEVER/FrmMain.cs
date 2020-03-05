@@ -14,6 +14,9 @@ namespace PPAP_SEVER
     {
         #region Member Variables
 
+        private CDatabaseTask m_cDatabaseTask = CPPAPManager.DBConnector;
+        private CJsonTask m_cJsonTask = CPPAPManager.JsonConnector;
+
         #endregion
         public FrmMain()
         {
@@ -40,29 +43,33 @@ namespace PPAP_SEVER
         /// </summary>
         private void Initialize()
         {
-            if (CConnectManager.DBConnector == null || CConnectManager.JsonConnector == null)
+            if (m_cDatabaseTask == null || m_cJsonTask == null)
                 return;
 
-            InitDBconnectInfor();
-
-
-            DataSet Insert = CConnectManager.DBConnector.ExcuteMySqlQuery("INSERT INTO test(`temp1`, `temp2`) VALUES('양윤일', '바아아앙부');");
-            grdDB.DataSource = CConnectManager.DBConnector.ExcuteMySqlQuery("SELECT * FROM ppap.test;").Tables[0];
+            //DB 연결 테스트 데이터 
+            initDBConnectInfo();
+            DataSet Insert = m_cDatabaseTask.ExcuteMySqlQuery("INSERT INTO test(`temp1`, `temp2`) VALUES('양윤일', '바아아앙부');");
+            grdDB.DataSource = m_cDatabaseTask.ExcuteMySqlQuery("SELECT * FROM ppap.test;").Tables[0];
             grvDB.UpdateCurrentRow();
-            
-            //do it..
-            //json 추가 필요 
+
+            //json 연결 테스트 데이터 
+            if (!m_cJsonTask.ReaderJsonFile("project.json"))
+                return;
+
+            if (!m_cJsonTask.WriteJsonFile())
+                return;
 
         }
+
         /// <summary>
         /// DB 연결에 필요한 정보 설정 하는 함수
         /// </summary>
-        private void InitDBconnectInfor()
+        private void initDBConnectInfo()
         {
-            CConnectManager.DBConnector.Server = "52.79.47.71";
-            CConnectManager.DBConnector.Database= "ppap";
-            CConnectManager.DBConnector.UserID ="ppap";
-            CConnectManager.DBConnector.Password = "sLK#e^";
+            CPPAPManager.DBConnector.Server = "52.79.47.71";
+            CPPAPManager.DBConnector.Database= "ppap";
+            CPPAPManager.DBConnector.UserID ="ppap";
+            CPPAPManager.DBConnector.Password = "sLK#e^";
         }
 
         #endregion
