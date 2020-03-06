@@ -32,10 +32,6 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.tabFormPage1 = new DevExpress.XtraBars.TabFormPage();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.grdDB = new DevExpress.XtraGrid.GridControl();
-            this.grvDB = new DevExpress.XtraGrid.Views.Grid.GridView();
-            ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvDB)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage2
@@ -59,31 +55,13 @@
             this.ribbonPage3.Name = "ribbonPage3";
             this.ribbonPage3.Text = "ribbonPage3";
             // 
-            // grdDB
-            // 
-            this.grdDB.Location = new System.Drawing.Point(58, 201);
-            this.grdDB.MainView = this.grvDB;
-            this.grdDB.Name = "grdDB";
-            this.grdDB.Size = new System.Drawing.Size(400, 200);
-            this.grdDB.TabIndex = 0;
-            this.grdDB.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grvDB});
-            // 
-            // grvDB
-            // 
-            this.grvDB.GridControl = this.grdDB;
-            this.grvDB.Name = "grvDB";
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(522, 465);
-            this.Controls.Add(this.grdDB);
             this.Name = "FrmMain";
             this.Text = "PPAP_SEVER";
-            ((System.ComponentModel.ISupportInitialize)(this.grdDB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvDB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,8 +71,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.TabFormPage tabFormPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
-        private DevExpress.XtraGrid.GridControl grdDB;
-        private DevExpress.XtraGrid.Views.Grid.GridView grvDB;
     }
 }
 

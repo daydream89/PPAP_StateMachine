@@ -76,6 +76,7 @@ namespace PPAP_SEVER
         /// </summary>
         public bool WriteJsonFile(TestData sJsonFile)
         {
+            //경로 지정해서 저장 하는거 필요 
             bool bOk = false;
             try
             {
