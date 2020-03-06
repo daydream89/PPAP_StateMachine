@@ -16,7 +16,7 @@ namespace PPAP_SEVER
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new Form1());
         }
     }
 }
