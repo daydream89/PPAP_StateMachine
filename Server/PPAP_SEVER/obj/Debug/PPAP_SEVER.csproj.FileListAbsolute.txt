@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 D:\99.etc\C#\PPAP\PPAP_SEVER\PPAP_SEVER\bin\Debug\PPAP_SEVER.exe.config
 D:\99.etc\C#\PPAP\PPAP_SEVER\PPAP_SEVER\bin\Debug\PPAP_SEVER.exe
 D:\99.etc\C#\PPAP\PPAP_SEVER\PPAP_SEVER\bin\Debug\PPAP_SEVER.pdb
@@ -96,6 +97,8 @@ D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.pdb
 D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\JsonExSerializer.dll
 D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Newtonsoft.Json.dll
 D:\99.etc\C#\PPAP\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Newtonsoft.Json.xml
+=======
+>>>>>>> Stashed changes
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\PPAP_SEVER.exe.config
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\PPAP_SEVER.exe
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\PPAP_SEVER.pdb
@@ -105,6 +108,10 @@ E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Googl
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\BouncyCastle.Crypto.dll
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Ubiety.Dns.Core.dll
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\Renci.SshNet.dll
+<<<<<<< Updated upstream
+=======
+E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\MySql.Data.xml
+>>>>>>> Stashed changes
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.csprojAssemblyReference.cache
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.Properties.Resources.resources
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.csproj.GenerateResource.cache
@@ -112,4 +119,7 @@ E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.csproj.CopyComplete
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.exe
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\obj\Debug\PPAP_SEVER.pdb
+<<<<<<< Updated upstream
 E:\00.source\01.PPAP_Project\PPAP_StateMachine\Server\PPAP_SEVER\bin\Debug\MySql.Data.xml
+=======
+>>>>>>> Stashed changes
