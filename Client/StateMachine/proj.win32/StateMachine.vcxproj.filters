@@ -13,6 +13,9 @@
     <Filter Include="src\reader">
       <UniqueIdentifier>{5ddc5037-ed71-4f20-8bbc-3d3261aca8b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\background">
+      <UniqueIdentifier>{164424e9-787b-4257-ab93-c7b9a844deff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -125,6 +128,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundScene.cpp">
+      <Filter>src\background</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +313,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundScene.h">
+      <Filter>src\background</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

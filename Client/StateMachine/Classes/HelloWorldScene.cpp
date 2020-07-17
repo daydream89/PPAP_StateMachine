@@ -75,6 +75,15 @@ bool HelloWorld::init()
         closeItem->setPosition(Vec2(x,y));
     }
 
+	SpriteFrameCache *cache = SpriteFrameCache::getInstance();
+
+	SpriteFrame *bgSprite = SpriteFrame::create("bg.png", Rect(0, 0, 192, 192));
+	cache->addSpriteFrame(bgSprite, "bg");
+
+	Sprite *bg1 = Sprite::createWithSpriteFrameName("bg");
+	bg1->setPosition(Point(120, 200));
+	this->addChild(bg1);
+
     // create menu, it's an autorelease object
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);
