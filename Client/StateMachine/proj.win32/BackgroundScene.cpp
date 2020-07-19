@@ -1,4 +1,5 @@
 
+#include "BackGroundMap.h"
 #include "BackgroundScene.h"
 #include "SimpleAudioEngine.h"
 
@@ -53,9 +54,10 @@ bool BackgroundScene::init()
 		closeItem->setPosition(Vec2(x, y));
 	}
 
+#if 1
 	SpriteFrameCache *cache = SpriteFrameCache::getInstance();
 
-	SpriteFrame *bgSprite = SpriteFrame::create("bg.png", Rect(0, 0, 100, 100));
+	SpriteFrame *bgSprite = SpriteFrame::create("grass.png", Rect(0, 0, 100, 100));
 	cache->addSpriteFrame(bgSprite, "bg");
 
 	Sprite *bg1 = Sprite::createWithSpriteFrameName("bg");
@@ -70,6 +72,13 @@ bool BackgroundScene::init()
 			this->addChild(bg[height][width]);
 		}
 	}
+#else
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j < 10; j++) {
+			BackgroundMap
+		}
+	}
+#endif
 
 
 	// create menu, it's an autorelease object
@@ -116,33 +125,6 @@ bool BackgroundScene::init()
 
 	return true;
 }
-int BackgroundMap::max_width = 10;
-int BackgroundMap::max_height = 8;
-int BackgroundMap::bg_width = 100;
-int BackgroundMap::bg_height = 100;
-	static int bg_num;
-class BackgroundMap
-{
-private:
-	static int max_width;
-	static int max_height;
-	static int bg_width;
-	static int bg_height;
-	static int bg_num;
-	int x;
-	int y;
-	int style;
-	Sprite *bgSprite;
-public:
-	BackgroundMap(int x, int y, int style);
-	void BackgroundInit(void);
-	void ChangeBackgroundImage(int style);
-};
-BackgroundMap::BackgroundMap(int x, int y, int style)
-{
-
-}
-
 
 void BackgroundScene::menuCloseCallback(Ref* pSender)
 {

@@ -132,6 +132,9 @@
     <ClCompile Include="BackgroundScene.cpp">
       <Filter>src\background</Filter>
     </ClCompile>
+    <ClCompile Include="BackgroundMap.cpp">
+      <Filter>src\background</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -315,6 +318,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="BackgroundScene.h">
+      <Filter>src\background</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundMap.h">
       <Filter>src\background</Filter>
     </ClInclude>
   </ItemGroup>
